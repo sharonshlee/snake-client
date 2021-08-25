@@ -18,13 +18,11 @@ const connect = function () {
     //handle the connect event
     console.log("Successfully connected to game server");
     conn.write("Name: SHL");
+    conn.write("Say: Sharon is here!");
   });
 
   return conn;
 };
-
-// console.log("Connecting ...");
-// connect();
 
 module.exports = {
   connect,
