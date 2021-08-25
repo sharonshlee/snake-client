@@ -18,19 +18,9 @@ const connect = function () {
     //handle the connect event
     console.log("Successfully connected to game server");
     conn.write("Name: SHL");
-    //   setTimeout(() => {
-    //     conn.write("Move: up");
-    //     setTimeout(() => {
-    //       conn.write("Move: up");
-    //       setTimeout(() => {
-    //         conn.write("Move: up");
-    //       }, 1000);
-    //     }, 1000);
-    //   }, 1000);
-    // });
-
-    return conn;
   });
+
+  return conn;
 };
 
 // console.log("Connecting ...");
